@@ -1,5 +1,5 @@
 {
-  "name": "platzi-store",
+  "name": "platzi-store-unit-tests",
   "version": "1.0.0",
   "description": "Proyecto para el curso de Jest",
   "main": "src/index.js",
@@ -32,6 +32,7 @@
     "babel-eslint": "^10.0.3",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.2.0",
+    "history": "^5.3.0",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.7.0",
@@ -66,7 +67,7 @@
   },
   "homepage": "https://github.com/gndx/platzi-store/#readme",
   "jest": {
-    "setupFilesAfterEnv":[
+    "setupFilesAfterEnv": [
       "<rootDir>/src/__test__/setupTest.js"
     ],
     "moduleNameMapper": {
