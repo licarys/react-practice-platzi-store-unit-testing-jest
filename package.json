@@ -26,7 +26,7 @@
   "author": "Oscar Barajas <oscar@arepa.dev>",
   "license": "MIT",
   "dependencies": {
-    "@babel/core": "^7.7.2",
+    "@babel/core": "^7.17.7",
     "@babel/preset-env": "^7.7.1",
     "@babel/preset-react": "^7.7.0",
     "babel-eslint": "^10.0.3",
@@ -64,5 +64,14 @@
   "bugs": {
     "url": "https://github.com/gndx/platzi-store/issues"
   },
-  "homepage": "https://github.com/gndx/platzi-store/#readme"
+  "homepage": "https://github.com/gndx/platzi-store/#readme",
+  "jest": {
+    "setupFilesAfterEnv":[
+      "<rootDir>/src/__test__/setupTest.js"
+    ],
+    "moduleNameMapper": {
+      "\\.(styl|css)$": "<rootDir>/src/__mocks__/styleMock.js"
+    },
+    "testEnvironment": "jsdom"
+  }
 }
